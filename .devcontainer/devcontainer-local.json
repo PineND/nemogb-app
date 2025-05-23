@@ -2,7 +2,7 @@
   "name": "NemoGB Shiny App (Local Build - Fallback)",
   "dockerComposeFile": "../docker-compose.yml",
   "service": "app",
-  "workspaceFolder": "/srv/shiny-server",
+  "workspaceFolder": "/workspaces/nemogb-app",
   
   "customizations": {
     "codespaces": {

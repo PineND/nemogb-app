@@ -1,7 +1,7 @@
 {
   "name": "NemoGB Shiny App",
   "image": "ghcr.io/pineND/nemogb-app:latest",
-  "workspaceFolder": "/srv/shiny-server",
+  "workspaceFolder": "/workspaces/nemogb-app",
   
   // Configure tool-specific properties within customizations.
   "customizations": {
