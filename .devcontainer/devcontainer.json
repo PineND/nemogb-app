@@ -1,6 +1,6 @@
 {
   "name": "NemoGB Shiny App",
-  "image": "ghcr.io/pineND/nemogb-app:latest",
+  "image": "rocker/shiny:latest",
   "workspaceFolder": "/workspaces/nemogb-app",
   
   // Configure tool-specific properties within customizations.
@@ -33,5 +33,5 @@
   // "features": {},
   
   // Use 'postCreateCommand' to run commands after the container is created.
-  "postCreateCommand": "echo 'Development environment is ready!'"
+  "postCreateCommand": "echo 'Development environment is ready! Installing R packages...' && R -e 'install.packages(c(\"shiny\", \"shinydashboard\", \"DT\", \"plotly\"), repos=\"http://cran.rstudio.com/\")'"
 }
