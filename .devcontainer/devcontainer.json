@@ -14,7 +14,9 @@
         "r.bracketedPaste": true,
         "r.plot.useHttpgd": true,
         "editor.wordWrap": "on",
-        "editor.formatOnSave": true
+        "editor.formatOnSave": true,
+        "r.lsp.enabled": true,
+        "r.lsp.debug": false
       },
       "extensions": [
         "reditorsupport.r",
@@ -33,5 +35,5 @@
   // "features": {},
   
   // Use 'postCreateCommand' to run commands after the container is created.
-  "postCreateCommand": "echo 'Development environment is ready! Installing R packages...' && R -e 'install.packages(c(\"shiny\", \"shinydashboard\", \"DT\", \"plotly\"), repos=\"http://cran.rstudio.com/\")'"
+  "postCreateCommand": "echo 'Setting up R environment...' && R -e 'install.packages(c(\"languageserver\", \"httpgd\", \"shiny\", \"shinydashboard\", \"DT\", \"plotly\"), repos=\"http://cran.rstudio.com/\"); cat(\"R Language Server setup complete!\\n\")'"
 }
